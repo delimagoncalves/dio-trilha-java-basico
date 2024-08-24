@@ -15,13 +15,13 @@ public class App {
         int numeroAgencia = scan.nextInt();
 
         System.out.println("Por favor, digite o número  da conta: ");
-        int numeroConta = scan.nextInt();
+        String numeroConta = scan.next();
 
         System.out.println("Por favor, digite um valor de deposito: ");
         double valorDeposito = scan.nextDouble();
         saldo = valorDeposito;
 
-        System.out.printf("\"Olá %s, obrigado por criar uma conta em nosso banco, sua agência é %d, conta %d e seu saldo R$ %.2f já está disponível para saque.\"",nomeCliente, numeroAgencia,numeroConta,saldo);
+        System.out.printf("\"Olá %s, obrigado por criar uma conta em nosso banco, sua agência é %d, conta %s e seu saldo R$ %.2f já está disponível para saque.\"",nomeCliente, numeroAgencia,numeroConta,saldo);
 
         scan.close();
     
